@@ -1,8 +1,11 @@
-package ru.nvgsoft.carwash
+package ru.nvgsoft.carwash.screens.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import dagger.hilt.android.AndroidEntryPoint
+import ru.nvgsoft.carwash.R
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
