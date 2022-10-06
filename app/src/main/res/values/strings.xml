@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">CarWash</string>
     <string name="please_wait">Please wait…</string>
+    <string name="field_phone">phone</string>
+    <string name="field_password">password</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_create_account">Create account</string>
+    <string name="action_request_code">Request code</string>
+    <string name="field_code">Code</string>
+    <string name="description">С помощью приложения вы можете удобно и выгодно держать свой автомобиль в чистоте. Удобно пополнять свой счет и контролировать расходы</string>
 </resources>
