@@ -1,4 +1,6 @@
 package ru.nvgsoft.carwash.screens.main.tabs
 
-class TabsFragment {
+import androidx.fragment.app.Fragment
+
+class TabsFragment: Fragment() {
 }

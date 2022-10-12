@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/signInFragment">
 
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="ru.nvgsoft.carwash.screens.main.auth.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" />
+    <fragment
+        android:id="@+id/signInCodeFragment"
+        android:name="ru.nvgsoft.carwash.screens.main.auth.SignInCodeFragment"
+        android:label="fragment_sign_in_code"
+        tools:layout="@layout/fragment_sign_in_code" />
+    <fragment
+        android:id="@+id/tabsFragment"
+        android:name="ru.nvgsoft.carwash.screens.main.tabs.TabsFragment"
+        android:label="fragment_tabs"
+        tools:layout="@layout/fragment_tabs" />
 </navigation>

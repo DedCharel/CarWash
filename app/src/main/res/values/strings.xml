@@ -8,4 +8,8 @@
     <string name="action_request_code">Request code</string>
     <string name="field_code">Code</string>
     <string name="description">С помощью приложения вы можете удобно и выгодно держать свой автомобиль в чистоте. Удобно пополнять свой счет и контролировать расходы</string>
+    <string name="more">More</string>
+    <string name="main">Main</string>
+    <string name="history">History</string>
+    <string name="news">News</string>
 </resources>

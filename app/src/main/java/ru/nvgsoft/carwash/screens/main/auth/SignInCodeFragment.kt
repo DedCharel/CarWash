@@ -1,4 +1,6 @@
 package ru.nvgsoft.carwash.screens.main.auth
 
-class SignInCodeFragment {
+import androidx.fragment.app.Fragment
+
+class SignInCodeFragment: Fragment() {
 }
