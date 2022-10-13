@@ -48,9 +48,9 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager.registerFragmentLifecycleCallbacks(fragmentListener, true)
 
         // updating username in the toolbar
-        viewModel.username.observe(this) {
-            binding.usernameTextView.text = it
-        }
+//        viewModel.username.observe(this) {
+//            binding.usernameTextView.text = it
+//        }
     }
 
     private fun getRootNavController(): NavController {

@@ -19,10 +19,11 @@ class MainActivityViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
-            // listening for the current account and send the username to be displayed in the toolbar
-            accountsRepository.getAccount().collect { result ->
-                _username.value = result.getValueOrNull()?.username?.let { "@$it" } ?: ""
-            }
+//            // listening for the current account and send the username to be displayed in the toolbar
+//            accountsRepository.getAccount().collect { result ->
+//                _username.value = result.getValueOrNull()?.username?.let { "@$it" } ?: ""
+//            }
+            _username.value = "@user"
         }
     }
 }

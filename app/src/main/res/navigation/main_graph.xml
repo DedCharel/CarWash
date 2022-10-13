@@ -9,7 +9,14 @@
         android:id="@+id/signInFragment"
         android:name="ru.nvgsoft.carwash.screens.main.auth.SignInFragment"
         android:label="fragment_sign_in"
-        tools:layout="@layout/fragment_sign_in" />
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_tabsFragment"
+            app:destination="@id/tabsFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_signInCodeFragment"
+            app:destination="@id/signInCodeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signInCodeFragment"
         android:name="ru.nvgsoft.carwash.screens.main.auth.SignInCodeFragment"

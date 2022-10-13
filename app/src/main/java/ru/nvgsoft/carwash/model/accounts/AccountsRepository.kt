@@ -26,8 +26,8 @@ class AccountsRepository @Inject constructor(
      * If user is not logged-in an empty result is emitted.
      * @return infinite flow, always success; errors are wrapped to [Result]
      */
-    fun getAccount(): Flow<Result<Account>> {
-        return accountLazyFlowSubject.listen(Unit)
-    }
+//    fun getAccount(): Flow<Result<Account>> {
+//        return accountLazyFlowSubject.listen(Unit)
+//    }
 
 }
