@@ -1,4 +1,6 @@
 package ru.nvgsoft.carwash.screens.main.auth
 
-class SignInCodeViewModel {
+import androidx.lifecycle.ViewModel
+
+class SignInCodeViewModel: ViewModel() {
 }

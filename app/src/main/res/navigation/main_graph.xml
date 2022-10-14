@@ -21,7 +21,14 @@
         android:id="@+id/signInCodeFragment"
         android:name="ru.nvgsoft.carwash.screens.main.auth.SignInCodeFragment"
         android:label="fragment_sign_in_code"
-        tools:layout="@layout/fragment_sign_in_code" />
+        tools:layout="@layout/fragment_sign_in_code" >
+        <argument
+            android:name="phone"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_signInCodeFragment_to_tabsFragment"
+            app:destination="@id/tabsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/tabsFragment"
         android:name="ru.nvgsoft.carwash.screens.main.tabs.TabsFragment"

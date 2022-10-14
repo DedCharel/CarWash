@@ -7,6 +7,6 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="ru.nvgsoft.carwash.screens.main.tabs.main.MainFragment"
-        android:label="fragment_main"
+        android:label="@string/fragment_main"
         tools:layout="@layout/fragment_main" />
 </navigation>

@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/newsFragment"
         android:name="ru.nvgsoft.carwash.screens.main.tabs.news.NewsFragment"
-        android:label="fragment_news"
+        android:label="@string/fragment_news"
         tools:layout="@layout/fragment_news" />
 </navigation>

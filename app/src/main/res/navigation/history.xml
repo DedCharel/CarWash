@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/historyFragment"
         android:name="ru.nvgsoft.carwash.screens.main.tabs.history.HistoryFragment"
-        android:label="fragment_history"
+        android:label="@string/fragment_history"
         tools:layout="@layout/fragment_history" />
 </navigation>

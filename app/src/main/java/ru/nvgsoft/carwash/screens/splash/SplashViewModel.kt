@@ -16,7 +16,7 @@ class SplashViewModel: ViewModel() {
 
     init {
         viewModelScope.launch {
-            _launchMainScreenEvent.publishEvent(true)
+            _launchMainScreenEvent.publishEvent(false)
         }
     }
 }
