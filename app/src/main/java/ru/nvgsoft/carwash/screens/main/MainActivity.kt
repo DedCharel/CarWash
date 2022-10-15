@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     private val topLevelDestinations = setOf(getTabsDestination(), getSignInDestination())
 
 
-    // fragment listener is sued for tracking current nav controller
+    // fragment listener is used for tracking current nav controller
     private val fragmentListener = object : FragmentManager.FragmentLifecycleCallbacks() {
         override fun onFragmentViewCreated(fm: FragmentManager, f: Fragment, v: View, savedInstanceState: Bundle?) {
             super.onFragmentViewCreated(fm, f, v, savedInstanceState)
@@ -117,6 +117,22 @@ class MainActivity : AppCompatActivity() {
         val args = MainActivityArgs.fromBundle(bundle)
         return args.isSignedIn
     }
+
+    override fun onBackPressed() {
+        if (isStartDestination(navController?.currentDestination)) {
+            super.onBackPressed()
+        } else {
+            navController?.popBackStack()
+        }
+    }
+
+    override fun onDestroy() {
+        supportFragmentManager.unregisterFragmentLifecycleCallbacks(fragmentListener)
+        navController = null
+        super.onDestroy()
+    }
+
+    override fun onSupportNavigateUp(): Boolean = (navController?.navigateUp() ?: false) || super.onSupportNavigateUp()
 
     private fun getMainNavigationGraphId(): Int = R.navigation.main_graph
 

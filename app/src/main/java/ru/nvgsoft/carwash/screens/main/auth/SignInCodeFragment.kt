@@ -24,6 +24,7 @@ class SignInCodeFragment: Fragment(R.layout.fragment_sign_in_code) {
 
     private fun onSignInButtonPressed() {
         val direction = SignInCodeFragmentDirections.actionSignInCodeFragmentToTabsFragment()
-        findNavController().navigate(direction)
+        val navController = findNavController()
+        navController.navigate(direction)
     }
 }

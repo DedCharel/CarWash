@@ -18,6 +18,7 @@ private lateinit var binding: FragmentTabsBinding
 
         val navHost =childFragmentManager.findFragmentById(R.id.tabsContainer) as NavHostFragment
         val navController = navHost.navController
+        //navController.popBackStack(R.id.tabsFragment, true)
         NavigationUI.setupWithNavController(binding.bottomNavigationView, navController)
     }
 }

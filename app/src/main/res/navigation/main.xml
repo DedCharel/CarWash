@@ -8,5 +8,14 @@
         android:id="@+id/mainFragment"
         android:name="ru.nvgsoft.carwash.screens.main.tabs.main.MainFragment"
         android:label="@string/fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="ru.nvgsoft.carwash.screens.main.tabs.main.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
 </navigation>
