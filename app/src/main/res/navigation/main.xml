@@ -12,10 +12,21 @@
         <action
             android:id="@+id/action_mainFragment_to_mapFragment"
             app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_qrScan"
+            app:destination="@id/qrScan" />
     </fragment>
     <fragment
         android:id="@+id/mapFragment"
         android:name="ru.nvgsoft.carwash.screens.main.tabs.main.MapFragment"
         android:label="fragment_map"
         tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/qrScan"
+        android:name="ru.nvgsoft.carwash.screens.main.tabs.main.ScanFragment"
+        android:label="QrScan" >
+        <argument
+            android:name="code"
+            app:argType="string" />
+    </fragment>
 </navigation>

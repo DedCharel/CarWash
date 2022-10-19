@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="ru.nvgsoft.carwash">
 
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,7 +19,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value=""/>
+            android:value="AIzaSyDeVYwRpPT1Bc9fsc_SjtDFipku8jiubGQ"/>
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashActivity"

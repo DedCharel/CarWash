@@ -132,6 +132,7 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
     }
 
+
     override fun onSupportNavigateUp(): Boolean = (navController?.navigateUp() ?: false) || super.onSupportNavigateUp()
 
     private fun getMainNavigationGraphId(): Int = R.navigation.main_graph
